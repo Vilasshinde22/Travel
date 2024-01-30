@@ -36,7 +36,7 @@ function openWhatsApp() {
   var screenWidth = window.screen.width;
   var windowHeight = 500; // You can adjust the height as needed
   var windowWidth = 400; // You can adjust the width as needed
-  var topPosition = 0;
+  var topPosition = 30;
   var leftPosition = screenWidth - windowWidth;
 
     // Open a new window with the WhatsApp chat link
