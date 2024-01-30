@@ -43,7 +43,9 @@ header {
   padding: 15px 100px;
 }
 .logo img {
-  width: 40px;
+  width: 250px;
+  height: 40px;
+  
 }
 .navbar {
   display: flex;
@@ -100,6 +102,7 @@ header {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(231, 222, 222);
 }
 .text h1 {
   font-size: 3.5rem;
@@ -475,6 +478,8 @@ header {
   }
 }
 
+
+
 /* WhatsApp Icon Styling */
 .whatsapp-icon {
   position: fixed;
@@ -519,5 +524,8 @@ header {
 @media (max-width: 768px) {
   .logo img {
     width: 110px; /* Adjust the width for mobile view */
-  }
+  } 
+}
+body {
+  background-color: rgb(231, 222, 222);
 }
