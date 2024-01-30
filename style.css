@@ -501,3 +501,23 @@ header {
   50% {
     opacity: 0;
   }
+}
+.logo img {
+  animation: slideInFromLeft 1s ease-in-out; /* Set the animation properties */
+}
+
+/* Define the animation keyframes */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Initial position outside the viewport */
+  }
+  100% {
+    transform: translateX(0); /* Final position at the original location */
+  }
+}
+/* Logo for Mobile View */
+@media (max-width: 768px) {
+  .logo img {
+    width: 110px; /* Adjust the width for mobile view */
+  }
+}
