@@ -454,7 +454,7 @@ header {
     padding-top: 2rem;
   }
 }
-/*@media (max-width: 350px) {
+@media (max-width: 350px) {
   header {
     padding: 4px 14px;
   }
@@ -476,7 +476,7 @@ header {
   .services-container {
     grid-template-columns: repeat(auto-fit, minmax(254px, auto));
   }
-}*/
+}
 
 /* WhatsApp Icon Styling */
 .whatsapp-icon {
@@ -505,42 +505,18 @@ header {
     opacity: 0;
   }
 }
-@media (max-width: 350px) {
-  header {
-    padding: 4px 14px;
-  }
-  .logo img {
-    width: 30px;
-  }
-  section {
-    padding: 50px 14px;
-  }
-  .header-btn .sign-in {
-    padding: 7px 10px;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .text h1 {
-    font-size: 2rem;
-  }
+.bg-img {
+  position: absolute;
+  top: 80;
+  right: 0;
+  left: 20;
+  width: 40%; /* Adjust the width as needed */
+  height: 70%; /* Adjust the height as needed */
+  overflow: hidden;
+}
 
-  .services-container {
-    grid-template-columns: repeat(auto-fit, minmax(254px, auto));
-  }
-
-  /* Add the following styles for responsiveness */
-  .bg-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .bg-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+.bg-img img {
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;  Ensure the image covers the entire container */
 }
