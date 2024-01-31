@@ -78,19 +78,7 @@ header {
   z-index: 10001;
   display: none;
 }
-.header-btn a {
-  padding: 10px 20px;
-  color: var(--text-color);
-  font-weight: 500;
-}
-.header-btn .sign-in {
-  background: #474fa0;
-  color: #fff;
-  border-radius: 0.5rem;
-}
-.header-btn .sign-in:hover {
-  background: var(--main-color);
-}
+
 .home {
   width: 100%;
   min-height: 100vh;
@@ -104,8 +92,12 @@ header {
   grid-template-columns: repeat(2, 1fr);
   background-color: rgb(231, 222, 222);
 }
+.text{
+  padding-bottom: 40px;
+  line-height: 50px;
+}
 .text h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 2px;
 }
 .text span {
@@ -113,15 +105,9 @@ header {
 }
 .text p {
   margin: 0.5rem 0 1rem;
+  line-height: 20px;
 }
-.app-stores {
-  display: flex;
-}
-.app-stores img {
-  width: 100px;
-  margin-right: 1rem;
-  cursor: pointer;
-}
+
 .form-container form {
   display: flex;
   flex-wrap: wrap;
@@ -132,6 +118,7 @@ header {
   left: 100px;
   background: #fff;
   padding: 20px;
+
   border-radius: 0.5rem;
 }
 .input-box {
@@ -143,6 +130,14 @@ header {
   font-weight: 500;
 }
 .input-box input {
+  padding: 7px;
+  outline: none;
+  border: none;
+  background: #eeeff1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.input-box select{
   padding: 7px;
   outline: none;
   border: none;
@@ -464,11 +459,7 @@ header {
   section {
     padding: 50px 14px;
   }
-  .header-btn .sign-in {
-    padding: 7px 10px;
-    font-size: 14px;
-    font-weight: 400;
-  }
+
   .text h1 {
     font-size: 2rem;
   }
