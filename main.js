@@ -45,3 +45,6 @@ function openWhatsApp() {
     // Open a new window with the WhatsApp chat link
   window.open(url, "_blank", "width=" + windowWidth + ",height=" + windowHeight + ",top=" + topPosition + ",left=" + leftPosition);
   }
+
+  
+
