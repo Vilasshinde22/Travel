@@ -40,11 +40,87 @@ function openWhatsApp() {
   var leftPosition = screenWidth - windowWidth;
 
     // Open a new window with the WhatsApp chat link
-    //window.open(url, "_blank", "width=500,height=600,top=0,right=0");
-
-    // Open a new window with the WhatsApp chat link
   window.open(url, "_blank", "width=" + windowWidth + ",height=" + windowHeight + ",top=" + topPosition + ",left=" + leftPosition);
   }
 
-  
+// Main form deatils submit to whatsapp
+  function submitForm() {
+    // Get form data
+    const From = document.getElementById('From').value;
+    const To = document.getElementById('To').value;
+    const startdate = document.getElementById('startdate').value;
+    const enddate = document.getElementById('enddate').value;
+    const Jurney = document.getElementById('Jurney').value;
+    const passenger = document.getElementById('passenger').value;
+
+    // Form validation
+    if (!From || !To || !startdate || !enddate || !Jurney || !passenger) {
+        alert('Please fill in all the required fields.');
+        return;
+    }
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"From:" + From +"%0a"
+    +"To:" + To +"%0a"
+    +"Start Date:" + startdate +"%0a"
+    +"End Date:" + enddate +"%0a"
+    +"Jurney:" + Jurney +"%0a"
+    +"No of Passenger:" + passenger;
+
+    window.open(whatsappurl,"_blank").focus();
+
+    // Clear the form
+    document.getElementById('carBookingForm').reset();
+
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
+
+//maruti Dzire
+function submitformdzire(){
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"Maruti Swift Dzire 5 Seater Enquiry" +"%0a"
+    window.open(whatsappurl,"_blank").focus();
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
+//Innova
+function submitinnova(){
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"Innova Crysta 7, 8 Seater Enquiry" +"%0a"
+    window.open(whatsappurl,"_blank").focus();
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
+//Ertiga
+function submitertiga(){
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"Ertiga 7 Seater Enquiry" +"%0a"
+    window.open(whatsappurl,"_blank").focus();
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
+//Tempo Traveller
+function submittempotraveller(){
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"Tempo Traveller 20 Seater Enquiry" +"%0a"
+    window.open(whatsappurl,"_blank").focus();
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
+//Bus
+function submitbus(){
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"Bus 40 Seater Enquiry" +"%0a"
+    window.open(whatsappurl,"_blank").focus();
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
+//Wagon R
+function submitwagonr(){
+    const whatsappurl="https://wa.me/918668926949?text="
+    +"Wagon R 5 Seater Enquiry" +"%0a"
+    window.open(whatsappurl,"_blank").focus();
+    // Inform the user that the booking is successful
+    alert('Enquiry send successfull! We will contact you shortly.');
+}
 
